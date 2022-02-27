@@ -48,6 +48,22 @@ public int bfs(int v) {
     return 0;
 }
 ```
+```java
+// 이차원 배열 정렬하는 소스
+Arrays.sort(tickets_compare,(o1,o2)->{
+    if(o1[0].contentEquals(o2[0]))
+        return o1[1].compareTo(o2[1]);
+    else
+        return o1[0].compareTo(o2[0]);
+});
+```
+
+## 백트래킹
+답을 찾는 도중에 막히면, 되돌아가서 다시 답을 찾아가는 기법
+
+백트래킹에서 제일 중요한 것은 현재 지점에서 여러 갈래로 갈 수 있기 때문에
+
+재귀를 하고 난 뒤에 꼭 해당 지점에 대한 방문을 해제해 주어야 한다.
 
 ## 스택프레임
 함수의 호출과 관계되는 지역 변수와 매개변수가 저장되는 영역
