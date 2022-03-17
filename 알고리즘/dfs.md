@@ -25,7 +25,7 @@ public class Node {
     }
 }
 ```
-```java
+```
 // 이차원 배열 정렬하는 소스
 Arrays.sort(tickets_compare,(o1,o2)->{
     if(o1[0].contentEquals(o2[0]))
